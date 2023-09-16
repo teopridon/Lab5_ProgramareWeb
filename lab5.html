@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").click(function(){
+
+                $("#div1").animate({
+                    left: '250px',
+                    opacity: '0.0'
+                });
+
+                $("#div2").delay(300).fadeIn(1000);
+                $("#div2").delay(100).show("slide", { direction: "right" }, 3200);
+            });
+
+            $("#div2").click(function(){
+
+                $("#div2").animate({
+                    left: '250px',
+                    opacity: '0.0'
+                });
+
+                $("#div3").delay(300).fadeIn(1000);
+                $("#div3").delay(100).show("slide", { direction: "right" }, 3200);
+            });
+
+            $("#div3").click(function(){
+
+                $("#div3").animate({
+                    left: '250px',
+                    opacity: '0.0'
+                });
+
+                $("#div4").delay(300).fadeIn(1000);
+                $("#div4").delay(100).show("slide", { direction: "right" }, 3200);
+            });
+
+            $("#div4").click(function(){
+
+                $("#div4").animate({
+                    left: '250px',
+                    opacity: '0.0'
+                });
+
+                $("#div5").delay(300).fadeIn(1000);
+                $("#div5").delay(100).show("slide", { direction: "right" }, 3200);
+            });
+
+
+        });
+    </script>
+</head>
+
+
+
+<body>
+
+
+<div id ="div1" style="position:absolute;"><img src="one.jpg" alt="pic1" height="710" width="1520"> </div>
+
+<div id ="div2" style="display:none;position:absolute;"><img src="aaa.jpg" alt="pic2" height="710" width="1520"> </div>
+
+<div id ="div3" style="display:none;position:absolute;"><img src="bbb.jpg" alt="pic3" height="710" width="1520"> </div>
+
+<div id ="div4" style="display:none;position:absolute;"><img src="ccc.jpg" alt="pic4" height="710" width="1520"> </div>
+
+<div id ="div5" style="display:none;position:absolute;"><img src="seven.jpg" alt="pic5" height="710" width="1520"> </div>
+
+</body>
+</html>
